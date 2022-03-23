@@ -1,3 +1,4 @@
+import { Button, Input } from '@chakra-ui/react';
 import React from 'react'
 import './home.css';
 
@@ -5,10 +6,11 @@ const Home = () => {
   return (
     <div className='container'>
       <div className='header'>
-          Jobs Hub
+        Jobs Hub
       </div>
       <div className='banner'>
-          background image
+          <Input />
+          <Button>Search</Button>
       </div>
       <div className='content'>
         <div className='contentSideNavbar'>
