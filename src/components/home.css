@@ -9,6 +9,9 @@
 }
 .banner{
     border: 2px pink solid;
+    background-image: url(/src/components/job.jpg);
+    background-repeat: no-repeat;
+    height: 200px;
 }
 .content{
     display:flex;
