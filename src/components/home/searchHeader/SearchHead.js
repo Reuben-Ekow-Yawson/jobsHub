@@ -1,24 +1,45 @@
 import { Button } from '@chakra-ui/react'
-import React from 'react'
-import './styles.css'
+import React, { useContext, useState } from 'react'
+import { useNavigate } from 'react-router-dom';
+import './SearchHead.css'
+import JobContext from '../context/JobContext'
 
 
 const SearchHead = () => {
+  // const navigate = useNavigate();
+  // const [searchValue, setSearchValue] = useState("");
+  // const jobCtx = useContext(JobContext);
+  // const { searchJobData } = jobCtx;
+
+  // function searchjobDataHandler(e) {
+  //   e.preventDefault();
+  //   if (searchValue) {
+  //     navigate('/');
+  //     searchJobData(searchValue);
+  //     setSearchValue("");
+  //   }
+  // }
+  
   return (
     <div className='banner'>
         <div className='search_container' >
-            <span className="material-icons">
+          <form 
+          // onSubmit={searchjobDataHandler}
+          >
+            <label className="material-icons">
                 work_outline
-            </span>
+            </label>
+            <input 
+              type="text" 
+              id='search' 
+              placeholder='Title, companies, expertise or benefits'
+              // onChange={(e) => setSearchValue(e.target.value)}
+            />
 
-            <input type="search" placeholder='Title, companies, expertise or benefits'/>
-
-            {/* <Input type="search" mt='90px' w='500px' placeholder='Title, companies, expertise or benefits'/> */}
-
-            <div className='button_container'>
             <Button className='button'>Search</Button>
-                {/* <button>Search</button> */}
-            </div>
+          </form>
+            
+            
         </div>  
     </div>
     
