@@ -1,0 +1,5 @@
+.jobsContainer{
+    flex: 1.5;
+    border: 2px pink solid;
+    margin-left: 2px;
+}
