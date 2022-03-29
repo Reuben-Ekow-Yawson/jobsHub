@@ -1,12 +1,20 @@
 import React from 'react';
 import './App.css';
-import Home from './components/Home';
+import Footer from './components/home/footer/Footer';
+import Header from './components/home/header/Header';
+import Home from './components/home/Home';
+import SearchHeader from './components/home/searchHeader/SearchHead'
+
+
 
 function App() {
   
   return (
     <div className="App">
-       <Home />
+      <Header />
+      <SearchHeader />
+      <Home />
+      <Footer />
     </div>
   );
 }
