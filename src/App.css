@@ -1,8 +1,9 @@
-*{
-    background-color: #fefeff;
+body{
+    background-color: #f7f7f7;
 }
 .App{
     width: 80%;
+    height: 100vh;
     margin-left: auto;
     margin-right: auto;
     padding-left: 20px;
