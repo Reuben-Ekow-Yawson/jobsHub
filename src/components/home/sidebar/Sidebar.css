@@ -1,0 +1,17 @@
+.sidebar{
+    flex: 1;
+    margin-right: 5px;
+}
+
+.city_container{
+    padding: 1px;
+    border-radius: 8px;
+    min-width: 300px;
+    background: #fff;
+    font-size: 13px;
+}
+
+h3{
+    color: #aeafb3;
+    font-family: sans-serif;
+}
