@@ -1,8 +1,6 @@
 import { Button } from '@chakra-ui/react'
-import React, { useContext, useState } from 'react'
-import { useNavigate } from 'react-router-dom';
-import './SearchHead.css'
-import JobContext from '../context/JobContext'
+import React from 'react'
+import './Search.css'
 
 
 const SearchHead = () => {
@@ -11,7 +9,7 @@ const SearchHead = () => {
   return (
     <div className='banner'>
         <div className='search_container' >
-          <form 
+          <div className='search' 
           >
             <label className="material-icons">
                 work_outline
@@ -23,7 +21,7 @@ const SearchHead = () => {
             />
 
             <Button className='button'>Search</Button>
-          </form>
+          </div>
             
             
         </div>  
