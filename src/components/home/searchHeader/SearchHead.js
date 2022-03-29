@@ -6,25 +6,12 @@ import JobContext from '../context/JobContext'
 
 
 const SearchHead = () => {
-  // const navigate = useNavigate();
-  // const [searchValue, setSearchValue] = useState("");
-  // const jobCtx = useContext(JobContext);
-  // const { searchJobData } = jobCtx;
-
-  // function searchjobDataHandler(e) {
-  //   e.preventDefault();
-  //   if (searchValue) {
-  //     navigate('/');
-  //     searchJobData(searchValue);
-  //     setSearchValue("");
-  //   }
-  // }
+  
   
   return (
     <div className='banner'>
         <div className='search_container' >
           <form 
-          // onSubmit={searchjobDataHandler}
           >
             <label className="material-icons">
                 work_outline
@@ -33,7 +20,6 @@ const SearchHead = () => {
               type="text" 
               id='search' 
               placeholder='Title, companies, expertise or benefits'
-              // onChange={(e) => setSearchValue(e.target.value)}
             />
 
             <Button className='button'>Search</Button>
