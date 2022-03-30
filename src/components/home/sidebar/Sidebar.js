@@ -1,4 +1,4 @@
-import {  Input, RadioGroup } from '@chakra-ui/react'
+import { RadioGroup } from '@chakra-ui/react'
 import { useState } from 'react'
 import './Sidebar.css'
 
@@ -30,13 +30,12 @@ const Sidebar = () => {
             Full time
         </div>
     
-        <h3>LOCATION</h3>
+        <h4>LOCATION</h4>
 
         {/* Search for the cities */}
         
         <div className='city_container' >
-          <form 
-          >
+          <form>
             <label className="material-icons">
                 public
             </label>
@@ -47,8 +46,8 @@ const Sidebar = () => {
             />
           </form>
         </div>
-        <div>
-            <RadioGroup fontSize='18px' onChange={setValue} value={value}>
+        <div className='radio'>
+            <RadioGroup fontSize='18px' mb='8px' onChange={setValue} value={value}>
             {cities.map(city =>{
                 return (
                     <div>
