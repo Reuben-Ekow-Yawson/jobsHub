@@ -29,7 +29,7 @@ const JobContainer = () => {
                 <Box className='job_name'>
                   <h2>{job.company_name}</h2>
                   <h1>{job.title}</h1>
-                  <Button>{job.job_type}</Button>
+                  <button>{job.job_type}</button>
                 </Box>
                 <h6>{job.candidate_required_location}</h6>
                 <h6>{job.publication_date}</h6>
