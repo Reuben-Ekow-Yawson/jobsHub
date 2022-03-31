@@ -10,7 +10,7 @@ const JobContainer = () => {
 
  
   const fetchJobs = async () => {
-    const response = await fetch("https://remotive.io/api/remote-jobs")
+    const response = await fetch("https://remotive.io/api/remote-jobs?limit=200")
     const jsonResponse = await response.json()
     setJobs(jsonResponse.jobs);
     console.log(jsonResponse)
