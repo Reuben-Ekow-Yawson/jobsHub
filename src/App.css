@@ -9,3 +9,29 @@ body{
     padding-left: 20px;
     padding-right: 20px;
 }
+
+@media only screen and (min-width: 576px) {
+    .container {
+        max-width: 520px;
+   }
+}
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 750px;
+   }
+}
+@media only screen and (min-width: 992px) {
+    .container {
+        max-width: 974px;
+   }
+}
+@media only screen and (min-width: 1199px) {
+    .container {
+        max-width: 1140px;
+   }
+}
+@media only screen and (min-width: 1400px) {
+    .container {
+        max-width: 1200px;
+   }
+}
