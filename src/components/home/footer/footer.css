@@ -1,0 +1,16 @@
+footer {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #F6F7FB;
+    margin-bottom: 0;
+}
+footer a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-weight: 600;
+}
+p{
+    background-color: #F6F7FB;
+    color: #5c5e66;
+}

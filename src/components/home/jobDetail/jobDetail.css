@@ -1,0 +1,7 @@
+.sidebox{
+    flex: 1;
+    background-color: aqua;
+}
+.jobDetail_box{
+    flex: 3;
+}

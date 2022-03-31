@@ -1,0 +1,17 @@
+.header{
+    width: 100%;
+    min-height: 60px;    
+    display: flex;
+    align-items:center;
+    /* font-family: ; */
+}
+
+.bold {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.thin {
+    font-size: 1.7rem;
+    font-weight: 200;
+}
