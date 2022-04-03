@@ -1,23 +1,49 @@
-import React from 'react';
-import './App.css';
 import Footer from './components/home/footer/Footer';
 import Header from './components/home/header/Header';
-import Home from './components/home/Home';
-import JobDetail from './components/home/jobDetail/JobDetail';
-import SearchHeader from './components/home/searchHeader/SearchHead'
 
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Search from "./components/home/searchHeader/Search";
+import JobList from "./components/home/jobsContainer/JobList";
+import JobDescription from "./components/home/jobDetail/JobDescription";
+import JobFilter from "./components/home/sidebar/JobFilter";
+
+import { JobContextProvider } from "./context/JobContext";
+import './App.css'
 
 
 function App() {
   
   return (
-    <div className="App">
+    <JobContextProvider>
+    <Router>
+      {/* HEADER */}
       <Header />
-      <SearchHeader />
-      <Home />
-      {/* <JobDetail /> */}
+
+      {/* SEARCH FORM */}
+      <Search />
+
+      <main>
+        <div className="container">
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <JobFilter />
+                  <JobList />
+                </>
+              }
+            />
+            <Route path="/:jobDetailUrl" element={<JobDescription />} />
+          </Routes>
+        </div>
+      </main>
+
+      {/* FOOTER */}
       <Footer />
-    </div>
+    </Router>
+  </JobContextProvider>
+
   );
 }
 
