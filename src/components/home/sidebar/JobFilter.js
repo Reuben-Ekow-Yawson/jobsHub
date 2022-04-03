@@ -66,7 +66,7 @@ const JobFilter = () => {
         <h3>Location</h3>
 
         <div className={`search-location-group ${error && "error-input"}`}>
-          <span class="material-icons">public</span>
+          <span className="material-icons">public</span>
           <input
             type="text"
             placeholder="City, state, zip code or country"
