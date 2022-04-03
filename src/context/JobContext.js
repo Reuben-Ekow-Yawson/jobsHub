@@ -16,8 +16,6 @@ export const JobContextProvider = ({ children }) => {
 
   useEffect(() => {
     fetchJobData(currentPage);
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   /* fetch job data */
@@ -31,7 +29,7 @@ export const JobContextProvider = ({ children }) => {
           return (
             jobs.candidate_required_location === "Worldwide" ||
             jobs.candidate_required_location === "Canada Only" ||
-            jobs.candidate_required_location === "India" ||
+            // jobs.candidate_required_location === "India" ||
             jobs.candidate_required_location === "UK Only" ||
             jobs.candidate_required_location === "USA Only"
           );
