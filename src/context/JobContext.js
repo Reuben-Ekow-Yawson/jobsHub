@@ -30,7 +30,7 @@ export const JobContextProvider = ({ children }) => {
         const allData = data.jobs.filter((jobs) => {
           return (
             jobs.candidate_required_location === "Worldwide" ||
-            // jobs.candidate_required_location === "Canada Only" ||
+            jobs.candidate_required_location === "Canada Only" ||
             jobs.candidate_required_location === "India" ||
             jobs.candidate_required_location === "UK Only" ||
             jobs.candidate_required_location === "USA Only"
