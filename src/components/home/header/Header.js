@@ -1,11 +1,11 @@
 import React from 'react'
-import './styes.css'
+import './header.css'
 
 const Header = () => {
   return (
     <header>
       <div className="container">
-        <div className="site-logo">Jobs <span>hub</span></div>
+        <div className="title">Jobs <span>hub</span></div>
       </div>
     </header>
   )
