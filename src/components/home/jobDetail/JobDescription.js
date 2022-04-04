@@ -2,8 +2,6 @@ import { useContext, useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import JobContext from "../../../context/JobContext";
 import { CgArrowLongLeft } from "react-icons/cg";
-import { HiOutlineClock } from "react-icons/hi";
-import { FaGlobeAfrica } from "react-icons/fa";
 import parse from "html-react-parser";
 import './jobDetail.css'
 
@@ -24,7 +22,7 @@ const JobDescription = () => {
             return false;
           }
         });
-        // console.log(jobDeatilsArray);
+
         setJobDetails(jobDeatilsArray);
       }
     }, 100);
@@ -55,7 +53,7 @@ const JobDescription = () => {
                 {job.job_type && <div className="job-type-card">Full time</div>}
               </div>
               <div className="posted-date d-center">
-                <HiOutlineClock />
+                <span class="material-icons">schedule</span>
                 {Math.abs(
                   new Date().getDate() -
                     new Date(job.publication_date).getDate()
@@ -74,7 +72,8 @@ const JobDescription = () => {
                 <div>
                   <div className="company-name">{job.company_name}</div>
                   <div className="company-country d-center">
-                    <FaGlobeAfrica /> {job.candidate_required_location}
+                    <span className="material-icons">public</span>
+                    {job.candidate_required_location}
                   </div>
                 </div>
               </div>
