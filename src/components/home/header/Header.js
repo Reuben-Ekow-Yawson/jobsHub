@@ -3,9 +3,11 @@ import './styes.css'
 
 const Header = () => {
   return (
-    <div className='header'>
-     <span className='bold'>Jobs <span className='thin'>Hub</span></span>
-    </div>
+    <header>
+      <div className="container">
+        <div className="site-logo">Jobs <span>hub</span></div>
+      </div>
+    </header>
   )
 }
 
