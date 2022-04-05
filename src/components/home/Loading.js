@@ -1,5 +1,5 @@
 import spinner from './spinner.gif';
-import './loading.css'
+// import './loading.css'
 import { Load } from './StyleLoad.style';
 
 
