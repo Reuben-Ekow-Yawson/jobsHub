@@ -12,11 +12,10 @@
 ## Table of Contents
 
 - [Hme page](#home)
-  - [Built With](#built-with)
+- [Built With](#built-with)
 - [Features](#features)
 - [How to use](#how-to-use)
 - [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
 
 ## Landing Page
 
@@ -47,7 +46,7 @@ $ npm install
 
 Then
 
-Run the app
+Run the app with the below command
 
 $ npm start
 
