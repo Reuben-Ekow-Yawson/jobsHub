@@ -1,0 +1,87 @@
+.job-card-wrapper,
+.job-details {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+.job-card {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 32px;
+    display: flex;
+}
+
+.job-card a {
+    display: block;
+  }
+.job-card .company-logo {
+    border-radius: 4px;
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    margin-right: 16px;
+}
+
+.job-card .company-logo img {
+    display: block;
+    object-fit: cover;
+  }
+.job-card .company-name {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #334680;
+    margin-bottom: 8px;
+}
+
+.job-card .profile {
+    font-size: 18px;
+    line-height: 21px;
+    color: #334680;
+    margin-bottom: 12px;
+}
+
+.job-card .job-des {
+    width: 100%;
+}
+
+.job-card .job-card-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.job-card .company-country {
+    margin-right: 16px;
+}
+
+.job-type-card {
+    border: 1px solid #334680;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #334680;
+    display: inline-block;
+    padding: 6px 8px;
+}
+
+.d-center {
+    display: flex;
+    align-items: center;
+}
+
+.d-center svg {
+    margin-right: 8px;
+    display: block;
+}
