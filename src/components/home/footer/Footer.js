@@ -1,8 +1,9 @@
-import "./footer.css";
+// import "./footer.css";
+import { FooterStyle } from "./Foot.style";
 
 const Footer = () => {
   return (
-    <footer>
+    <FooterStyle>
       <p>
         created by{" "}
         <a
@@ -14,7 +15,7 @@ const Footer = () => {
         </a>
         - devChallenges.io
       </p>
-    </footer>
+    </FooterStyle>
   );
 };
 
