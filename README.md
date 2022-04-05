@@ -52,7 +52,7 @@ $ npm start
 
 ## Contact
 
-<h3>#Reuben Ekow Yawson</h3>
+<h3>Reuben Ekow Yawson</h3>
 
 - GitHub [Reuben](https://github.com/Reuben-Ekow-Yawson)
 - LinkedIn [reuben](www.linkedin.com/in/reuben-ekow-yawson)
