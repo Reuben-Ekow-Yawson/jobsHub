@@ -1,11 +1,13 @@
 import spinner from './spinner.gif';
 import './loading.css'
+import { Load } from './StyleLoad.style';
+
 
 const Loading = () => {
   return (
-    <div className="loading-container">
+    <Load>
       <img src={spinner} alt="Loading" className='loading-img' />
-    </div>
+    </Load>
   );
 };
 
