@@ -16,7 +16,7 @@ export const JobContextProvider = ({ children }) => {
 
   useEffect(() => {
     fetchJobData(currentPage);
-  });
+  },[ ]);
 
   /* fetch job data */
   const fetchJobData = (currentPage) => {
