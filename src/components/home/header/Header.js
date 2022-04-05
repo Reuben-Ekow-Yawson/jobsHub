@@ -1,13 +1,14 @@
 import React from 'react'
-import './header.css'
+// import './header.css'
+import { StyleHeader } from './Head.style'
 
 const Header = () => {
   return (
-    <header>
+    <StyleHeader>
       <div className="container">
         <div className="title">Jobs <span>hub</span></div>
       </div>
-    </header>
+    </StyleHeader>
   )
 }
 
