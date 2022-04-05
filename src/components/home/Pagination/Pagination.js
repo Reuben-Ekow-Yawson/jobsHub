@@ -1,6 +1,9 @@
 import { useContext } from "react";
 import JobContext from "../../../context/JobContext";
-import "./pagination.css";
+// import "./pagination.css";
+
+import { Pages } from "./StylePage.style";
+
 
 const Pagination = ({ jobsPerPage, currentPage, filteredJobData }) => {
   const jobCtx = useContext(JobContext);
@@ -14,7 +17,7 @@ const Pagination = ({ jobsPerPage, currentPage, filteredJobData }) => {
   }
 
   return (
-    <ul className="pagination">
+    <Pages>
       <li
         className={`pagination-item ${currentPage === 1 ? "disabled" : ""}`}
         onClick={prevPaginate}
@@ -39,7 +42,7 @@ const Pagination = ({ jobsPerPage, currentPage, filteredJobData }) => {
       >
         <span class="material-icons">keyboard_arrow_right</span>
       </li>
-    </ul>
+    </Pages>
   );
 };
 

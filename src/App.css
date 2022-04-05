@@ -1,37 +1,89 @@
-body{
-    background-color: #f7f7f7;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.App{
-    width: 80%;
-    height: 100vh;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #b9bdcf;
+  font-weight: 500;
+  background-color: #f6f7fb;
+}
+main {
+  padding-bottom: 50px;
+  padding-top: 42px;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media only screen and (min-width: 576px) {
-    .container {
-        max-width: 520px;
-   }
+  .container {
+    max-width: 520px;
+  }
 }
+
 @media only screen and (min-width: 768px) {
-    .container {
-        max-width: 750px;
-   }
+  .container {
+    max-width: 750px;
+  }
 }
+
 @media only screen and (min-width: 992px) {
-    .container {
-        max-width: 974px;
-   }
+  .container {
+    max-width: 974px;
+  }
 }
+
 @media only screen and (min-width: 1199px) {
-    .container {
-        max-width: 1140px;
-   }
+  .container {
+    max-width: 1140px;
+  }
 }
+
 @media only screen and (min-width: 1400px) {
-    .container {
-        max-width: 1200px;
-   }
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  main .container {
+    display: flex;
+  }
+}
+
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 21px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  padding: 5px;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }

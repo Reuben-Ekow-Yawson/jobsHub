@@ -2,7 +2,9 @@ import backgroundImg from "./backgroundImg.png";
 import { useContext, useState } from "react";
 import JobContext from "../../../context/JobContext";
 import { useNavigate } from "react-router-dom";
-import "./Search.css";
+// import "./Search.css";
+import { SearchStyle } from "./StyleSearch.style";
+
 
 const Search = () => {
   const navigate = useNavigate();
@@ -20,7 +22,7 @@ const Search = () => {
   }
 
   return (
-    <div className="container">
+    <SearchStyle className="container">
       <section
         className="search-form"
         style={{
@@ -42,7 +44,7 @@ const Search = () => {
           </button>
         </form>
       </section>
-    </div>
+    </SearchStyle>
   );
 };
 

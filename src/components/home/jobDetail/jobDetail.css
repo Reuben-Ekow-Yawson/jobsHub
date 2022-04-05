@@ -1,7 +1,128 @@
-.sidebox{
-    flex: 1;
-    background-color: aqua;
+.h1, .h2, .h3 {
+    font-size: 32px;
+    color: #334680;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    line-height: 1.4;
+  }
+  
+
+.sidebar {
+    color: #334680;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
-.jobDetail_box{
-    flex: 3;
+
+.sidebar a.back-to-search {
+    color: #1e86ff;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    margin-bottom: 36px;
+    align-items: center;
+}
+
+.sidebar a.back-to-search svg {
+    display: block;
+    margin-right: 15px;
+    width: 24px;
+    height: 24px;
+}
+
+.sidebar .contact-info {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 30px;
+}
+
+.sidebar .contact-info a {
+    color: #1e86ff;
+}
+
+.job-details {
+    color: #334680;
+}
+
+.job-details .heading {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.job-details .job-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-right: 15px;
+}
+
+.job-details .posted-date,
+.job-details .company-info {
+    margin-bottom: 32px;
+}
+
+.job-details .posted-date,
+.job-details .company-country {
+    color: #b9bdcf;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.job-details .company-logo {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    margin-right: 12px;
+}
+
+.job-details .company-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 10px;
+}
+
+.job-details .company-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.job-details .company-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+
+.job-details .company-description br {
+    display: none;
+}
+
+.job-details .company-description ul,
+.job-details .company-description p {
+    margin-bottom: 20px;
+    background-color: transparent !important;
+}
+
+.job-details .company-description ul li,
+.job-details .company-description p li {
+    white-space: normal !important;
+    margin-left: 0 !important;
+}
+
+.job-details .company-description ul span,
+.job-details .company-description p span {
+    background-color: transparent !important;
+    text-decoration: none !important;
+}
+
+.job-details .company-description p+ul {
+    margin-top: -15px;
+}
+
+@media only screen and (min-width: 992px) {
+    .sidebar .contact-info {
+        max-width: 250px;
+    }
 }
