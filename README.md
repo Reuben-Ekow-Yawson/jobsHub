@@ -48,6 +48,7 @@ $ npm install
 Then
 
 Run the app
+
 $ npm start
 
 ## Contact
