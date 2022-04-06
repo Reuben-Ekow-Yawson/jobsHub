@@ -1,5 +1,5 @@
 import axios from "axios";
-const { createContext, useEffect, useState } = require("react");
+import { createContext, useEffect, useState } from "react";
 const JobContext = createContext();
 
 export const JobContextProvider = ({ children }) => {
@@ -14,12 +14,13 @@ export const JobContextProvider = ({ children }) => {
 
   const url = `https://remotive.com/api/remote-jobs`;
 
-  useEffect(() => {
-    fetchJobData(currentPage);
-  },[ ]);
 
-  /* fetch job data */
-  const fetchJobData = (currentPage) => {
+    /* fetch job data */
+    const fetchJobData = (currentPage) => {};
+
+  useEffect(() => {
+    // fetchJobData(currentPage);
+
     axios
       .get(url)
       .then((res) => {
@@ -27,11 +28,7 @@ export const JobContextProvider = ({ children }) => {
         const { data } = res;
         const allData = data.jobs.filter((jobs) => {
           return (
-            jobs.candidate_required_location === "Worldwide" ||
-            jobs.candidate_required_location === "Canada Only" ||
-            // jobs.candidate_required_location === "India" ||
-            jobs.candidate_required_location === "UK Only" ||
-            jobs.candidate_required_location === "USA Only"
+            jobs.candidate_required_location
           );
         });
         const oneMonthData = allData
@@ -70,7 +67,9 @@ export const JobContextProvider = ({ children }) => {
         setLoading(false);
       })
       .catch((err) => console.log(err));
-  };
+  },[currentPage, jobsPerPage, url]);
+
+
 
   /* GET CURRENT POSTS */
   const getCurrrentPosts = (filteredData) => {
