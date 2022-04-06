@@ -39,7 +39,7 @@ const JobDescription = () => {
               <Link to="/" className="back-to-search">
                 <CgArrowLongLeft /> Back to search
               </Link>
-              <h3>HOw to Apply</h3>
+              <h3>HOW TO APPLY</h3>
               <p className="contact-info">
                 Please email a copy of your resume and online portfolio to
                 <a href="mailto:wes@kasisto.com"> wes@kasisto.com</a> & CC{" "}
