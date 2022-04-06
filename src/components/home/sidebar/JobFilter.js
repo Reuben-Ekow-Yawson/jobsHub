@@ -11,6 +11,8 @@ const JobFilter = () => {
   const jobCtx = useContext(JobContext);
   const { locations, locationFilterData, filterFullTimeJob } = jobCtx;
 
+  let newLocation = locations.slice(0, 4);
+
   /* full time filter */
   function fullTimeJobHanlder() {
     setIsChecked(!isChecked);
@@ -63,9 +65,9 @@ const JobFilter = () => {
       </form>
 
       <form className="location-form" onSubmit={searchLocationFilter}>
-        <h3>Location</h3>
+        <h3>LOCATION</h3>
 
-        <div className={`search-location-group ${error && "error-input"}`}>
+        <div className={`search-location-group`}>
           <span className="material-icons">public</span>
           <input
             type="text"
@@ -84,8 +86,7 @@ const JobFilter = () => {
 
         <ul className="location-list">
           
-          {locations.length > 0 &&
-            locations.map((location, index) => (
+          {newLocation.map((location, index) => (
               <li
                 className="location-list-item"
                 key={location.toLowerCase().split(" ").join("-")}
