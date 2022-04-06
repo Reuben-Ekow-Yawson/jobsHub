@@ -1,5 +1,5 @@
 import Job from "./Job";
-import Loading from "../Loading";
+import Loading from "../loading/Loading"
 import { useContext } from "react";
 import JobContext from "../../../context/JobContext";
 import Pagination from "../Pagination/Pagination";
