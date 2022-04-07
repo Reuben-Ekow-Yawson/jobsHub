@@ -31,7 +31,7 @@
 * React
 * Axios
 * HTML React Parser
-* [Remote Jobs API](https://remotive.com/api/remote-jobs)
+* [Remote Jobs API](https://github.com/remotive-com/remote-jobs-api)
 
 ## Features
 
