@@ -19,11 +19,11 @@
 
 ## Landing Page
 
-![screenshot](src/components/Screenshot.png)
+![screenshot](src/components/images/Screenshot.png)
 
 ## Description Page
 
-![screenshot](src/components/Screen.png)
+![screenshot](src/components/images/Screen.png)
 
 
 ### Built With
